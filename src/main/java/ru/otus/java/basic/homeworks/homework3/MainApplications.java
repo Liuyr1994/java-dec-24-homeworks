@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class MainApplications {
     public static void main(String[] args) {
+
     }
 
     public static int sumOfPositiveElements(int[][] array) {
@@ -48,7 +49,7 @@ public class MainApplications {
 
         int maxElement = array[0][0];
         for (int i = 0; i < array.length; i++) {
-            for (int j = 1; j < array[i].length; j++) {
+            for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j] > maxElement) {
                     maxElement = array[i][j];
                 }
@@ -59,7 +60,7 @@ public class MainApplications {
     }
 
     public int theSumOfTheElementsOfTheSecondRow(int[][] array) {
-        if (array[1].length == 0) {
+        if (array.length < 2) {
             return -1;
         }
 
