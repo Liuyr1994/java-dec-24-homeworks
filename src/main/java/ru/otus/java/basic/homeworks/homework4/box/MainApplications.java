@@ -4,6 +4,6 @@ public class MainApplications {
     public static void main(String[] args) {
         Box box = new Box(2, "black");
         System.out.println(box);
-        box.openBox();
+        box.open();
     }
 }
